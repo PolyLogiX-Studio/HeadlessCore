@@ -1,21 +1,25 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
-  '@bombitmanbomb/neosjs': 1.9.0_26e6a588b1d803cd0058d23480a65e12
-  neosjs-commands: 1.0.1_@bombitmanbomb+neosjs@1.9.0
-  neosjs-headless-interface: 2.2.1_@bombitmanbomb+neosjs@1.9.0
-lockfileVersion: 5.2
+  '@bombitmanbomb/neosjs':
+    specifier: ^1.9.0
+    version: 1.9.0(neosjs-commands@1.0.1)(neosjs-headless-interface@2.2.1)
+  neosjs-commands:
+    specifier: ^1.0.1
+    version: 1.0.1(@bombitmanbomb/neosjs@1.9.0)
+  neosjs-headless-interface:
+    specifier: ^2.2.1
+    version: 2.2.1(@bombitmanbomb/neosjs@1.9.0)
+
 packages:
-  /@bombitmanbomb/neosjs/1.9.0_26e6a588b1d803cd0058d23480a65e12:
-    dependencies:
-      crypto-js: 4.0.0
-      decimal.js: 10.2.1
-      neosjs-commands: 1.0.1_@bombitmanbomb+neosjs@1.9.0
-      neosjs-headless-interface: 2.2.1_@bombitmanbomb+neosjs@1.9.0
-      node-fetch: 2.6.1
-      uri-js: 4.4.0
-      uuid: 8.3.1
-    dev: false
-    engines:
-      node: '>=12.0.0'
+
+  /@bombitmanbomb/neosjs@1.9.0(neosjs-commands@1.0.1)(neosjs-headless-interface@2.2.1):
+    resolution: {integrity: sha512-uofqGTM6VYZh1suG5v1BqO3F5ER8euZSfrfZbBI2Az6uHli3sE/IQZ/wG+qHvXxhDsWEICHYiwWNPE+Y2xJu7A==}
+    engines: {node: '>=12.0.0'}
     peerDependencies:
       neosjs-commands: ^1.0.0
       neosjs-headless-interface: ^1.0.0
@@ -24,61 +28,61 @@ packages:
         optional: true
       neosjs-headless-interface:
         optional: true
-    resolution:
-      integrity: sha512-uofqGTM6VYZh1suG5v1BqO3F5ER8euZSfrfZbBI2Az6uHli3sE/IQZ/wG+qHvXxhDsWEICHYiwWNPE+Y2xJu7A==
-  /crypto-js/4.0.0:
-    dev: false
-    resolution:
-      integrity: sha512-bzHZN8Pn+gS7DQA6n+iUmBfl0hO5DJq++QP3U6uTucDtk/0iGpXd/Gg7CGR0p8tJhofJyaKoWBuJI4eAO00BBg==
-  /decimal.js/10.2.1:
-    dev: false
-    resolution:
-      integrity: sha512-KaL7+6Fw6i5A2XSnsbhm/6B+NuEA7TZ4vqxnd5tXz9sbKtrN9Srj8ab4vKVdK8YAqZO9P1kg45Y6YLoduPf+kw==
-  /neosjs-commands/1.0.1_@bombitmanbomb+neosjs@1.9.0:
     dependencies:
-      '@bombitmanbomb/neosjs': 1.9.0_26e6a588b1d803cd0058d23480a65e12
+      crypto-js: 4.2.0
+      decimal.js: 10.2.1
+      neosjs-commands: 1.0.1(@bombitmanbomb/neosjs@1.9.0)
+      neosjs-headless-interface: 2.2.1(@bombitmanbomb/neosjs@1.9.0)
+      node-fetch: 2.6.1
+      uri-js: 4.4.0
+      uuid: 8.3.1
     dev: false
+
+  /crypto-js@4.2.0:
+    resolution: {integrity: sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==}
+    dev: false
+
+  /decimal.js@10.2.1:
+    resolution: {integrity: sha512-KaL7+6Fw6i5A2XSnsbhm/6B+NuEA7TZ4vqxnd5tXz9sbKtrN9Srj8ab4vKVdK8YAqZO9P1kg45Y6YLoduPf+kw==}
+    dev: false
+
+  /neosjs-commands@1.0.1(@bombitmanbomb/neosjs@1.9.0):
+    resolution: {integrity: sha512-0G2Sguly86c4S0ccPEWy0L9dK0GsEll/dYw7V1D6WnXyfW5WjK3H7pul0l3pvIsmDJ6VVu2hN6JefuLuEArUrg==}
     peerDependencies:
       '@bombitmanbomb/neosjs': ^1.8.0
-    resolution:
-      integrity: sha512-0G2Sguly86c4S0ccPEWy0L9dK0GsEll/dYw7V1D6WnXyfW5WjK3H7pul0l3pvIsmDJ6VVu2hN6JefuLuEArUrg==
-  /neosjs-headless-interface/2.2.1_@bombitmanbomb+neosjs@1.9.0:
     dependencies:
-      '@bombitmanbomb/neosjs': 1.9.0_26e6a588b1d803cd0058d23480a65e12
+      '@bombitmanbomb/neosjs': 1.9.0(neosjs-commands@1.0.1)(neosjs-headless-interface@2.2.1)
     dev: false
-    os:
-      - '!darwin'
+
+  /neosjs-headless-interface@2.2.1(@bombitmanbomb/neosjs@1.9.0):
+    resolution: {integrity: sha512-0WyOQRgvSF3c5Ejv72w+lp46fxMKTnweNmxhDueVZyX/Ylr2IQVWDaa640y6sWEOpZu9FpSq3JK9DqSmggRIGQ==}
+    os: ['!darwin']
     peerDependencies:
       '@bombitmanbomb/neosjs': ^1.8.0
     peerDependenciesMeta:
       '@bombitmanbomb/neosjs':
         optional: true
-    resolution:
-      integrity: sha512-0WyOQRgvSF3c5Ejv72w+lp46fxMKTnweNmxhDueVZyX/Ylr2IQVWDaa640y6sWEOpZu9FpSq3JK9DqSmggRIGQ==
-  /node-fetch/2.6.1:
+    dependencies:
+      '@bombitmanbomb/neosjs': 1.9.0(neosjs-commands@1.0.1)(neosjs-headless-interface@2.2.1)
     dev: false
-    engines:
-      node: 4.x || >=6.0.0
-    resolution:
-      integrity: sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
-  /punycode/2.1.1:
+
+  /node-fetch@2.6.1:
+    resolution: {integrity: sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==}
+    engines: {node: 4.x || >=6.0.0}
     dev: false
-    engines:
-      node: '>=6'
-    resolution:
-      integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
-  /uri-js/4.4.0:
+
+  /punycode@2.1.1:
+    resolution: {integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==}
+    engines: {node: '>=6'}
+    dev: false
+
+  /uri-js@4.4.0:
+    resolution: {integrity: sha512-B0yRTzYdUCCn9n+F4+Gh4yIDtMQcaJsmYBDsTSG8g/OejKBodLQ2IHfN3bM7jUsRXndopT7OIXWdYqc1fjmV6g==}
     dependencies:
       punycode: 2.1.1
     dev: false
-    resolution:
-      integrity: sha512-B0yRTzYdUCCn9n+F4+Gh4yIDtMQcaJsmYBDsTSG8g/OejKBodLQ2IHfN3bM7jUsRXndopT7OIXWdYqc1fjmV6g==
-  /uuid/8.3.1:
-    dev: false
+
+  /uuid@8.3.1:
+    resolution: {integrity: sha512-FOmRr+FmWEIG8uhZv6C2bTgEVXsHk08kE7mPlrBbEe+c3r9pjceVPgupIfNIhc4yx55H69OXANrUaSuu9eInKg==}
     hasBin: true
-    resolution:
-      integrity: sha512-FOmRr+FmWEIG8uhZv6C2bTgEVXsHk08kE7mPlrBbEe+c3r9pjceVPgupIfNIhc4yx55H69OXANrUaSuu9eInKg==
-specifiers:
-  '@bombitmanbomb/neosjs': ^1.9.0
-  neosjs-commands: ^1.0.1
-  neosjs-headless-interface: ^2.2.1
+    dev: false
